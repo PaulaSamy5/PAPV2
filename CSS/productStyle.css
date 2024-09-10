@@ -747,25 +747,57 @@ table {
 .dm {
     width: 11%;
     padding: 5px 10px;
-    border-radius: 7px;
     border: none;
-    background-color: #313738;
+    
     font-size: 18px;
     font-weight: 700;
-    border: 1px solid black;
     color: white;
     margin-left: 0;
 }
-
+.dm button{
+    border: none;
+}
 .dm i {
     display: none;
 }
 
-.dark-mode .dm {
-    background-color: rgb(173, 173, 173);
-    color: black;
+
+.dm {
+    background-color: transparent;
+    border: none;
 }
 
+.dm:hover {
+    border: none;
+}
+
+.dark-mode .dm {
+    
+    background-color: transparent;
+    border: none;
+    border: transparent;
+    
+}
+.dark-mode .dm button{
+    border: none;
+    border: transparent;
+
+}
+
+.dark-mode .dm:hover {
+    border: none;
+    border: none;
+    border: transparent;
+}
+
+.dm span {
+    display: none;
+}
+
+.dm i {
+    display: inline-block;
+    color: rgb(162, 162, 162);
+}
 /*=============================================*/
 /*=====Responsive for tablets*/
 @media(max-width: 900px) {
@@ -1668,15 +1700,38 @@ table {
     background-color: #385d94;
     border: 3px solid #385d94;
 }
-
-.dm:hover {
-    border: none;
+.dark-mode .dm{
+    border: none !important;
 }
 
 .dark-mode .dm:hover {
-    border: none;
+    border: none !important;
 }
 
+.dark-mode .dm button:hover {
+    border: none !important;
+}
+#scroll{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: black;
+    border: 2px black solid;
+    color: white;
+    border: none;
+    display: none;
+}
+#scroll:hover{
+    letter-spacing: 0;
+    border: none;
+    background-color: white;
+    border: 2px black solid;
+    color: black;
+
+}
 @media(max-width:900px) {
 
     .text .dm:hover {
@@ -1685,6 +1740,10 @@ table {
 
     .dark-mode .text .dm:hover {
         border: transparent !important
+    }
+    #scroll{
+        display: none !important;
+
     }
 }
 
@@ -1695,5 +1754,8 @@ table {
 
     .dark-mode .text .dm:hover {
         border: transparent !important
+    }
+    #scroll{
+        display: none !important;
     }
 }
