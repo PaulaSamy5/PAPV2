@@ -10,7 +10,7 @@ It contains the main pages for a shopping platform, including:
 - Checkout Page  
 
 ## 🚀 Live Demo  
-👉 [Click here to view the live demo]([PUT-YOUR-LINK-HERE](https://paulasamy5.github.io/PAPV2/)
+👉 [Click here to view the live demo](https://paulasamy5.github.io/PAPV2/)
 
 ---
 ✨ Built with **HTML, CSS, Bootstrap, and a little JavaScript**.  
